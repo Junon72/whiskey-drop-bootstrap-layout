@@ -13,13 +13,51 @@
 <body>
     <!-- Nav -->
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <!-- navbar - 
+            navbar-expand-sm
+                - Navbars require a wrapping .navbar with .navbar-expand{-sm -md -lg -xl} for responsive collapsing and color scheme classes.
+            navbar-light
+                - font wight used in the text
+            bg-light
+                - color used in the text
+            -->
         <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <ul class"navbar-nav mr-auto">
+        <!-- navbar-brand 
+                - class is used to highlight the brand/logo/project name
+                - automatically style the image to fit the navbar vertically
+                -->
+        <ul class="navbar-nav mr-auto">
+            <!-- navbar-nav 
+                    - for a full-height and lightweight navigation (including support for dropdowns)
+                mr-auto
+                    - pushing the item right
+                    -->
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+            <!-- li class
+                active
+                    - class is applied to the navigation element the user is currently viewing
+                nav-item
+                    -  class allows quick change between different types of navigation while only changing the wrapping class on the <ul>. 
+                    This becomes more powerful when you generate the navigation you now only need to change the type of navigation in one location.
+                a class
+                nav-link
+                    - for a simple horizontal menu, add the .nav class to a <ul> element, followed by .nav-item for each <li> and add the .nav-link class to their links:
+                -->    
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
+            <!-- d-block
+                    - makes the element bolock element
+                d-sm-none
+                    - above 576px the element becomes invisible
+                    -->
         </ul>
         <div>
-        <p class="navbar-text my-outo mr-2"><i>Great whiskey delivered to your door!</i></p>
+        <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <!-- navbar-text
+                    - wraps a strings of text in an element
+                my-auto
+                    sets the top and bottom margins automatically
+                    -->
         <a href="/login/">Sign In/ Sign Up</a>
         </div>
     </nav>
