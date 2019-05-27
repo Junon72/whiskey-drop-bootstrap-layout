@@ -46,12 +46,17 @@
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
             <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
             <!-- d-block
-                    - makes the element bolock element
+                    - makes the element a block element
                 d-sm-none
                     - above 576px the element becomes invisible
                     -->
         </ul>
-        <div>
+        <div class="d-none d-md-block">
+            <!-- d-none
+                    - hidden in all
+                d-md-block
+                    - makes the element visible and a block element from middle sized devises up
+                    -->
         <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
             <!-- navbar-text
                     - wraps a strings of text in an element
