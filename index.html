@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
+
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                 a class
                 nav-link
                     - for a simple horizontal menu, add the .nav class to a <ul> element, followed by .nav-item for each <li> and add the .nav-link class to their links:
-                -->    
+                -->
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
             <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
             <!-- d-block
@@ -59,13 +59,13 @@
                 d-md-block
                     - makes the element visible and a block element from middle sized devises up
                     -->
-        <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
             <!-- navbar-text
                     - wraps a strings of text in an element
                 my-auto
                     sets the top and bottom margins automatically
                     -->
-        <a href="/login/">Sign In/ Sign Up</a>
+            <a href="/login/">Sign In/ Sign Up</a>
         </div>
     </nav>
     <article class="container mt-3">
@@ -81,14 +81,14 @@
                             - centers the text in callout container
                             -->
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
-                    <s class="d-none d-sm-inline">€19.99</s>
-                    <!-- d-none
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
+                        <s class="d-none d-sm-inline">€19.99</s>
+                        <!-- d-none
                             - hides the element in all devices
                         d-sm-inline
                             - makes the element visible and an inline element on devices above 576px -->
-                    <span class="d-inline d-sm-none"><br></span>
-                    <!-- added a span class and <br> to make sure the highlighted text (below) will always be on it's own line -->
+                        <span class="d-inline d-sm-none"><br></span>
+                        <!-- added a span class and <br> to make sure the highlighted text (below) will always be on it's own line -->
                         <strong><mark>First for free!</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
                     <!-- btn
@@ -115,16 +115,36 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                        <p><em>- Jane Doe</em></p>
-                    </blockquote>
+                    <div class="media">
+                        <!-- new class for the media -->
+                        <div class="d-none d-sm-block">
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                            <!-- rounded-circle
+                                - gives the image a round view
+                            mr-3
+                                - adds a margin of .75 spacers from the top -->
+                        </div>
+                        <div class="media-body">
+                            <!-- media-body - is added to enclose the block quote -->
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                <p><em>- Jane Doe</em></p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                        <p><em>- Jane Doe</em></p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="medi-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <p><em>- John Doe</em></p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
