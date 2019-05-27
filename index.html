@@ -20,6 +20,8 @@
                 - font wight used in the text
             bg-light
                 - color used in the text
+            fixed-top -> removed, because it would take too much space on smaller devices!
+                - fixes the nav bar to top
             -->
         <a href="/" class="navbar-brand">Whiskey Drop</a>
         <!-- navbar-brand 
@@ -66,14 +68,35 @@
         <a href="/login/">Sign In/ Sign Up</a>
         </div>
     </nav>
-    <article class="container">
+    <article class="container mt-3">
+        <!-- mt-3
+                - adds a margin to 0.75 spacers to the top and pushs the page content slightly down -->
         <!--Callout-->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
+                    <!-- jumbotron
+                            - a lightweight, flexible component that can optionally extend the entire viewport to highligh its content
+                        text-center
+                            - centers the text in callout container
+                            -->
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
-                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s>€19.99</s> <strong><mark>First for free!</mark></strong></p>
+                    <p class="lead">Sign up today to start receiving the world's best whiskeys every month. 
+                    <s class="d-none d-sm-inline">€19.99</s>
+                    <!-- d-none
+                            - hides the element in all devices
+                        d-sm-inline
+                            - makes the element visible and an inline element on devices above 576px -->
+                    <span class="d-inline d-sm-none"><br></span>
+                    <!-- added a span class and <br> to make sure the highlighted text (below) will always be on it's own line -->
+                        <strong><mark>First for free!</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
+                    <!-- btn
+                            - calls a button function
+                        btn-success
+                            - a type of the button (green with white text)
+                        btn-lg
+                            - a size of the button (large)-->
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink responsibly.</small></p>
                 </section>
             </div>
