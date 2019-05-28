@@ -22,6 +22,15 @@ body {
 
 .feature-container {}
 
+/* Block dividers*/
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #f05f40;
+}
+
 /* Jumbotron */
 
 .jumbotron {
