@@ -1,13 +1,16 @@
 body {
-    font-style: 'Roboto', sans-serif;
+    font-style:'Roboto', sans-serif;
 
 }
 
-.alert-container {}
+.alert-container {
+    
+}
 
 .callout-container {
     height: 100vh;
-    background: url(../images/whiskey-background.jpg) no-repeat center center fixed;
+    
+    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,7 +29,7 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .quote-container {}
@@ -49,8 +52,33 @@ body {
 .block-divider--short {
     width: 35px;
 }
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
 
 
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+    
+}
 /* Jumbotron */
 
 .jumbotron {
@@ -64,7 +92,7 @@ body {
 }
 
 .jumbotron .lead {
-    margin: 25px;
+    margin:  25px 0;
     color: #a7a7a7;
 }
 
