@@ -53,6 +53,7 @@ body {
 .quote-container {}
 
 .feature-container {}
+
 /* Page headers */
 
 .page-header {
@@ -64,6 +65,11 @@ body {
 .page-header h2 {
     margin-top: 0;
 }
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
+
 /* Block dividers*/
 
 .block-divider {
@@ -79,6 +85,10 @@ body {
 
 .block-divider--short {
     width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
 }
 
 /* Content containers */
@@ -162,4 +172,29 @@ body {
     color: white;
     background-color: #df4929;
     border-color: #df4929;
+}
+
+/* Features */
+
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+    ;
 }
