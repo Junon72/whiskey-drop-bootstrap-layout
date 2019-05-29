@@ -13,34 +13,43 @@
 </head>
 
 <body>
-    <!-- Nav -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <!-- navbar - 
+    <div class="container-fluid navalert-container"> <!-- new container for the navbar-->
+        <!-- Nav -->
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <!-- navbar - 
             navbar-expand-sm
                 - Navbars require a wrapping .navbar with .navbar-expand{-sm -md -lg -xl} for responsive collapsing and color scheme classes.
-            navbar-light
+            navbar-light -> changed to dark
                 - font wight used in the text
-            bg-light
+            bg-light -> removed
                 - color used in the text
             fixed-top -> removed, because it would take too much space on smaller devices!
                 - fixes the nav bar to top
             -->
-        <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <!-- navbar-brand 
+            <a href="/" class="navbar-brand">Whiskey Drop</a>
+            <!-- navbar-brand 
                 - class is used to highlight the brand/logo/project name
                 - automatically style the image to fit the navbar vertically
                 -->
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- new button class for collabsible button
+                To create a collapsible navigation bar, use a button with class="navbar-toggler", data-toggle="collapse" and data-target="#thetarget". 
+                Then wrap the navbar content (links, etc) inside a div element with class="collapse navbar-collapse", followed by an id that matches the data-target of the button: "thetarget"
+                The aria-controls attribute is a 'relationship attribute' which denotes which elements in a page an interactive element or set of elements has control over and affects. 
+                It's commonly used to describe a relationship between a button and the expandable region revealed by that button.
+                -->
         <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto">
-                <!-- navbar-nav 
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- the class and id targeted in the button class targeted in button class navbar-toggler
+                -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- navbar-nav 
                     - for a full-height and lightweight navigation (including support for dropdowns)
                 mr-auto
                     - pushing the item right
                     -->
-                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                <!-- li class
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <!-- li class
                 active
                     - class is applied to the navigation element the user is currently viewing
                 nav-item
@@ -50,42 +59,43 @@
                 nav-link
                     - for a simple horizontal menu, add the .nav class to a <ul> element, followed by .nav-item for each <li> and add the .nav-link class to their links:
                 -->
-                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-                <li class="nav-item dropdowns">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item dropdowns">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Whiskeys
         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Irish</a>
-                        <a class="dropdown-item" href="#">Scotch</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                        <a class="dropdown-item" href="#">American</a>
-                    </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Irish</a>
+                            <a class="dropdown-item" href="#">Scotch</a>
+                            <a class="dropdown-item" href="#">Japanese</a>
+                            <a class="dropdown-item" href="#">American</a>
+                        </div>
 
-                </li>
-                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
-                <!-- d-block
+                    </li>
+                    <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In/ Sign Up</a></li>
+                    <!-- d-block
                     - makes the element a block element
                 d-sm-none
                     - above 576px the element becomes invisible
                     -->
-            </ul>
-        </div>
-        <div class="d-none d-md-block">
-            <!-- d-none
+                </ul>
+            </div>
+            <div class="d-none d-md-block">
+                <!-- d-none
                     - hidden in all
                 d-md-block
                     - makes the element visible and a block element from middle sized devises up
                     -->
-            <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-            <!-- navbar-text
+                <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+                <!-- navbar-text
                     - wraps a strings of text in an element
                 my-auto
                     sets the top and bottom margins automatically
                     -->
-            <a href="/login/">Sign In/ Sign Up</a>
-        </div>
-    </nav>
+                <a href="/login/">Sign In/ Sign Up</a>
+            </div>
+        </nav>
+    </div>
     <article class="container alert-container">
         <!-- mt-3
                 - adds a margin to 0.75 spacers to the top and pushs the page content slightly down -->
